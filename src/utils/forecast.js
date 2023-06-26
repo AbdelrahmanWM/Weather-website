@@ -16,7 +16,7 @@ const forecast=(latitude,longitude,callback)=>{
             
             weatherDescribe:"It is "+response.body.current.weather_descriptions[0]
             +", it is currently "+response.body.current.temperature+' degrees out. It feels like '+
-            response.body.current.feelslike
+            response.body.current.feelslike+". The humidity is "+response.body.current.humidity+'%.'
             })
       }
    
