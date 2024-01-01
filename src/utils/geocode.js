@@ -1,6 +1,6 @@
 const request = require('request')
 const geocode = (address, callback) => {
-    const url = 'http://api.positionstack.com/v1/forward?access_key=a2ad3f871d6f292e5261b974721cb3af&query=' + encodeURIComponent(address) + '&limit=1'
+    const url = 'http://api.positionstack.com/v1/forward?access_key=###########################&query=' + encodeURIComponent(address) + '&limit=1'
     //console.log(url)
     request({ url, json: true }, (error, response) => {
       //console.log(response.body.data[0])
