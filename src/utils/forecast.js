@@ -1,6 +1,6 @@
 const request = require('request')
 const forecast = (latitude, longitude, callback) => {
-  const url = 'http://api.weatherstack.com/current?access_key=9e83b27cd15d3485183927fdad32e797&query=' + encodeURIComponent(latitude) + ',' + encodeURIComponent(longitude)
+  const url = 'http://api.weatherstack.com/current?access_key=#######################&query=' + encodeURIComponent(latitude) + ',' + encodeURIComponent(longitude)
   request({ url, json: true }, (error, response) => {
     if (error) {
       callback('Unable to connect ot location services', undefined)
